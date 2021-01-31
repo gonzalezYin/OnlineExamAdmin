@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OnlineExamSystem</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- 顶部 -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="homepage.html"><img src="images/logo.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="homepage.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="personalpage.html" data-toggle="dropdown" aria-expanded="false">
+              <div class="nav-profile-img">
+                <img src="images/faces/face2.jpg" href="personalpage.html" alt="image">
+                <span class="availability-status online"></span>             
+              </div>
+              <div class="nav-profile-text">
+                <p class="mb-1 text-black">Daisy Yin</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-none d-lg-block full-screen-link">
+            <a class="nav-link">
+              <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+            </a>
+          </li>   
+          <li class="nav-item nav-logout d-none d-lg-block">
+            <a class="nav-link" href="index.html">
+              <i class="mdi mdi-power"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- 左部导航栏 -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <a href="personalpage.html" class="nav-link">
+              <div class="nav-profile-image">
+                <img src="images/faces/face2.jpg" alt="profile">
+                <span class="login-status online"></span> <!--change to offline or busy as needed-->              
+              </div>
+              <div class="nav-profile-text d-flex flex-column">
+                <span class="font-weight-bold mb-2">Daisy Yin</span>
+                <span class="text-secondary text-small">Student</span>
+              </div>
+              <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="onlineExam.html">
+              <span class="menu-title">OnlineExam</span>
+              <i class="mdi mdi-alarm-check menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="onlineExercise.html">
+              <span class="menu-title">OnlineExercise</span>
+              <i class="mdi mdi-android-studio menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="queryGrades.html">
+              <span class="menu-title">QueryGrades</span>
+              <i class="mdi mdi-contacts menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="performanceAnalysis.html">
+              <span class="menu-title">PerformanceAnalysis</span>
+              <i class="mdi mdi-chart-bar menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="questionManagement.html">
+              <span class="menu-title">QuestionManagement</span>
+              <i class="mdi mdi-table-large menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="systemManagement.html">
+              <span class="menu-title">SystemManagement</span>
+              <i class="mdi mdi-account-settings-variant menu-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- 右侧信息栏 -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title">
+              Welcome to your personal information page.
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <span class="d-flex align-items-center purchase-popup">
+                <p>Please modify your information carefully. If you encounter any problems, please contact management.</p>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <span class="d-flex align-items-center purchase-popup">
+                <form class="pt-3">
+                  <div class="form-group">
+                    <label for="fname">Name</label>
+                    <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Daisy Yin">
+                  </div>
+                  <div class="form-group">
+                    <label for="fname">Email</label>
+                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="12345678@qq.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="fname">School</label>
+                    <select class="form-control form-control-lg" id="exampleFormControlSelect2">
+                      <option>No.1 Middle School</option>
+                      <option>No.2 Middle School</option>
+                      <option>No.3 Middle School</option>
+                      <option>No.4 Middle School</option>
+                      <option>No.5 Middle School</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="fname">Class</label>
+                    <select class="form-control form-control-lg" id="exampleFormControlSelect2">
+                      <option>Class one</option>
+                      <option>Class Two</option>
+                      <option>Class Three</option>
+                      <option>Class Four</option>
+                      <option>Class Five</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="fname">Password</label>
+                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="mt-3">
+                    <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="personalpage.html">Confirm</a>
+                  </div>
+                </form>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- 底部 -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <script src="vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
